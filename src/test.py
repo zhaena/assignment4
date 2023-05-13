@@ -1,11 +1,6 @@
-import unittest
+import pytest
 
 
-class MyTestCase(unittest.TestCase):
-    def test_addition(self):
-        result = 2 + 2
-        self.assertEqual(result, 4)
-
-
-if __name__ == '__test__':
-    unittest.main()
+def test_addition():
+    result = 2 + 2
+    assert result == 4
